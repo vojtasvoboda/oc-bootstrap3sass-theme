@@ -29,9 +29,20 @@ description = "Default layout"
     </head>
     <body>
 
-        <section id="layout-content">
+        <!-- Header -->
+        <header class="header-main">
+            {% partial 'modules/header' %}
+        </header>
+
+        <!-- Content -->
+        <section class="content-main">
             {% page %}
         </section>
+
+        <!-- Footer -->
+        <footer class="footer-main">
+            {% partial 'modules/footer' %}
+        </footer>
 
         <script src="{{ [
             'assets/vendor/jquery/dist/jquery.js',

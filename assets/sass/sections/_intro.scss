@@ -1,0 +1,7 @@
+.section-intro {
+    @extend %section;
+
+    h2 {
+        font-family: $font-lato;
+    }
+}

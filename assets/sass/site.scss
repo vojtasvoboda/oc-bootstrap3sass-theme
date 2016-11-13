@@ -55,10 +55,14 @@
 @import "../../assets/vendor/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
 
 // Base styles
-@import "base";
+@import "bases/theme";
+@import "bases/section";
+@import "bases/section-negative";
+@import "bases/href-negative";
 
 // Page fonts
 @import "fonts/lato";
+@import "fonts/font-awesome";
 
 // Pages
 @import "pages/homepage";
@@ -66,3 +70,8 @@
 // Partials
 @import "partials/header";
 @import "partials/footer";
+@import "partials/nav";
+
+// Sections
+@import "sections/intro";
+@import "sections/links";

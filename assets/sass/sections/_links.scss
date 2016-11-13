@@ -1,0 +1,7 @@
+.section-links {
+    @extend %section-negative;
+
+    a {
+        @extend %href-negative;
+    }
+}
