@@ -1,0 +1,12 @@
+{
+  "name": "oc-bootstrap3sass-theme",
+  "version": "1.0.0",
+  "description": "Bootstrap 3 Sass theme for OctoberCMS",
+  "main": "index.js",
+  "author": "Vojta Svoboda",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "bower": "^1.7.9"
+  }
+}

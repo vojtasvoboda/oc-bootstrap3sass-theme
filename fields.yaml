@@ -1,0 +1,8 @@
+tabs:
+    fields:
+        site_title:
+            tab: General
+            label: Title
+            type: text
+            default: My Websites
+            comment: Used at site title

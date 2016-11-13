@@ -1,0 +1,23 @@
+{
+    "name": "vojtasvoboda/oc-bootstrap3sass-theme",
+    "type": "october-theme",
+    "description": "Bootstrap 3 Sass theme for OctoberCMS",
+    "keywords": ["october", "cms", "bootstrap", "sass"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vojta Svoboda",
+            "email": "vojtasvoboda.cz@gmail.com",
+            "role": "Webdeveloper"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

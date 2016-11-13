@@ -1,0 +1,57 @@
+description = "Default layout"
+==
+<!DOCTYPE html>
+<html lang="en" class="en no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>{% if this.page.title %}{{ this.page.title}} &#124; {% endif %}{{ this.theme.site_title }}</title>
+
+        <meta name="description" content="{{ this.page.meta_description }}">
+        <meta name="title" content="{{ this.page.meta_title }}">
+
+        <link rel="icon" type="image/png" href="{{ 'assets/images/october.png' | theme }}">
+
+        <link href="{{ [
+            '@framework.extras',
+            'assets/sass/site.scss'
+        ] | theme }}" rel="stylesheet">
+        {% styles %}
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+
+        <section id="layout-content">
+            {% page %}
+        </section>
+
+        <script src="{{ [
+            'assets/vendor/jquery/dist/jquery.js',
+            'assets/vendor/bootstrap-sass/assets/javascripts/bootstrap/transition.js',
+            'assets/vendor/bootstrap-sass/assets/javascripts/bootstrap/alert.js',
+            'assets/vendor/bootstrap-sass/assets/javascripts/bootstrap/button.js',
+            'assets/vendor/bootstrap-sass/assets/javascripts/bootstrap/carousel.js',
+            'assets/vendor/bootstrap-sass/assets/javascripts/bootstrap/collapse.js',
+            'assets/vendor/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js',
+            'assets/vendor/bootstrap-sass/assets/javascripts/bootstrap/modal.js',
+            'assets/vendor/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js',
+            'assets/vendor/bootstrap-sass/assets/javascripts/bootstrap/popover.js',
+            'assets/vendor/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js',
+            'assets/vendor/bootstrap-sass/assets/javascripts/bootstrap/tab.js',
+            'assets/vendor/bootstrap-sass/assets/javascripts/bootstrap/affix.js',
+            '@framework',
+            '@framework.extras',
+            'assets/javascript/site.js'
+        ] | theme }}"></script>
+        {% scripts %}
+
+    </body>
+</html>

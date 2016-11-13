@@ -1,0 +1,6 @@
+name: Bootstrap 3 Sass
+description: 'Bootstrap 3 Sass theme for OctoberCMS'
+author: Vojta Svoboda
+homepage: 'http://getbootstrap.com'
+code: bootstrap3sass
+form: fields.yaml
